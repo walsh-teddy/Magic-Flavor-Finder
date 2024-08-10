@@ -1,0 +1,105 @@
+@font-face { 
+    font-family: plansewalker; 
+    src: url("Plansewalker.ttf"); 
+    font-style: normal;
+} 
+
+body {
+    background-color: rgb(202, 238, 225);
+}
+
+main {
+    max-width: 1000px;
+    background-color: rgb(148, 132, 182);
+    margin: 0px auto;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: plansewalker;
+}
+
+#controls
+{
+    display: flex;
+}
+
+#controls .control {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+}
+
+#nameBar {
+    width: 200px;
+    height: fit-content;
+}
+
+button {
+    max-width: 1000PX;
+    font-size: 40PX;
+    background-color: rgb(89, 55, 133);
+    border: 6px solid rgb(89, 55, 133);
+    margin: 20px;
+    color: rgb(209, 209, 209);
+    padding: 0.3em;
+    border-radius: 0.3em;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(225, 238, 233);
+    color: rgb(89, 55, 133);
+    border: 6px solid rgb(89, 55, 133);
+}
+
+button:active {
+    background-color: rgb(158, 182, 173);
+}
+
+#displayList {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.card img {
+    margin: 5px auto;
+    width: 175px;
+}
+
+.card .artist {
+    font-style: italic;
+}
+
+.card .flavor {
+    display: inline-block;
+}
+.card .flavor p {
+    margin: 10px 5px ;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 0px auto;
+}

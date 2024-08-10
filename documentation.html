@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <title>Teddy Walsh Project 2 documentation</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>
+                Project 2 Documentation
+            </h1>
+            <h4>
+                Project 2 by Teddy Walsh
+            </h4>
+        </header>
+        <h2>
+            Procsess
+        </h2>
+        <p>
+            After I made the prototype, I was pretty satisfied with what I did, although I knew there were obviously a
+            few features missing, such as saving info between sessions. I wrote down everything I needed to get done and
+            should add in a big comment at the top of my main.js page. Once I got all my feedback from my crit group, I
+            made a seperate document (to keep track of things easier) called
+            <a href="Proposal/thingsToImprove.txt">thingsToImprove.txt<a></a> and moved over all of my notes from when I
+                finished, and compounded them with all of the notes I got from my critGroup, such as the results text
+                not displaying colors correctly (that was a case of accidentally writing text = "stuff" rather than text
+                += "stuff").
+        </p>
+
+        <p>
+            I made a big list of fixes and ideas in this document. As I completed the ideas, I deleted
+            them off the page (which I regret. I should have moved them to a different section for documentation
+            purposes) and if an idea was too ambitious or I realized its not useful, then I moved it to the "nah"
+            section. Currently, the document only has 2 things left to do. The first of which "Have it remember what
+            the user did the next time they log in", I already did and the 2nd I decided to not bother with. I just
+            didn't update this page once I didn't need it anymore.
+        </p>
+
+        <h2>
+            Bug Fixes
+        </h2>
+
+        <p>
+            I ran into a few bugs, which I was able to fix (often just being the case of spelling something wrong and
+            JavaSctipt not telling me it was an error because it can just make new variables whenever...). I didn't
+            document every bug fix I did because otherwise that would have disrupted my flow and made me take even
+            longer to finish this, which would not have been good because I already stayed up until 6:00 AM this
+            Thursday to finish (it was my choice. I didn't have any other time in the week, and I know Im going to be
+            busy the Friday that its due), so its good it didn't take me <em>even longer</em>.
+        </p>
+
+        <p>
+            One big issue I ran into a few times was due to the fact that MTG is a very very old game, there have been
+            so many new mechanics and ideas, with the most problomatic ones being "dual faced cards" or cards that have
+            different mechanis for different types of cards. I would often scan for result.artist, but it didn't have
+            result.artist, it had result.card_faces[0].artist. Some had a single artist, some had 2 differnet artists,
+            some had a single flavor text, some had 2 differnet flavor texts. It was very chaotic and I basically had to
+            code in a check constantly if something is on a differnet face of the card. I just ignored every face but
+            the first if it had multiple.
+        </p>
+
+        <h2>
+            Requirements
+        </h2>
+
+        <p>
+            My project 2 uses the ScryFall API to create a custom API URL through multiple differnet user inputs,
+            requests that info from the API, and formats the returned info into a big list of boxes that show relevant
+            information (in my case, just the info about the flavor, not the mechanics of the card). I will admit that
+            my CSS had room for improvements, but I focused on functionality over astetics (somewhat ironically,
+            considering the purpose of my sight is flavor over function). My page remembers the last selection searched,
+            and fills that info in when the user loads the page again. My page creates a "next page" button when there
+            is more info to load in, which loads in the next batch of scryfall results, and does not show that button if
+            there are no more results. I was not able to code in a way to detect errors with the search unfortunately,
+            so if someone searches for something with 0 results, scryfall returns an error, but I was not able to figure
+            out how to detect that. I do have the functionality implimented for if it were to detect an error (at
+            main.js line 259), Im just not sure how to detect an error.
+        </p>
+
+        <h2>
+            Resources
+        </h2>
+
+        <p>
+            I didn't really use any outside resources. I occasionally looked at stack overflow when I didn't know how
+            something worked, but everything else was done 100% by me. All the images were loaded in from ScryFall.
+            Obviously my API is Scryfall incase Im supposed to mention that here.
+        </p>
+
+        <h2>
+            Grade
+        </h2>
+
+        <p>
+        <ul>
+            <li>
+                API: 10 /10
+            </li>
+            <li>
+                Local Storage: 10 /10
+            </li>
+            <li>
+                Controls: 10 /10
+            </li>
+            <li>
+                Error-free: 5 /10
+            </li>
+            <li>
+                Code: 10 /10
+            </li>
+            <li>
+                Semantic structure: 2 /4
+            </li>
+            <li>
+                Valid HTML: 3 /4
+            </li>
+            <li>
+                Valid CSS: 4 /4
+            </li>
+            <li>
+                Visual Design: 5 /8
+            </li>
+            <li>
+                Interaction Design: 7 /8
+            </li>
+            <li>
+                Responsive Design: 6 /8
+            </li>
+            <li>
+                Checkpoint Deliverables: 8 /8
+            </li>
+            <li>
+                Documentation: 5 /6
+            </li>
+            <li>
+                Total: 85 /100
+            </li>
+        </ul>
+        </p>
+    </main>
+</body>
+
+</html>

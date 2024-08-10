@@ -1,0 +1,9 @@
+Have it remember what the user did the next time they log in
+Maybe include actual manna cost (or color)
+
+Nah:
+Allow you to find all instances of a character
+Maybe allow you to find what plane something is on
+Maybe allow you to search all cards by an artist
+Maybe do something with dual cards
+Its very slow sometimes

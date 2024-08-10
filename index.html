@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Flavor Finder by Teddy Walsh</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>
+                Magic Flavor Finder
+            </h1>
+            <h4>
+                A Magic The Gathering Search Engine focused on Flavor over Function by Teddy Walsh
+            </h4>
+        </header>
+        <div id="controls">
+            <div class="control">
+                <h2>
+                    Select Mana Colors
+                </h2>
+
+                <p>
+                    <em>(Select nothing for colorless)</em>
+                </p>
+
+                <input type="checkbox" url="w" displayTerm="white" name="colorButton" id="white">
+                <label for="white">White</label><br>
+
+                <input type="checkbox" url="u" displayTerm="blue" name="colorButton" id="blue">
+                <label for="blue">Blue</label><br>
+
+                <input type="checkbox" url="b" displayTerm="black" name="colorButton" id="black">
+                <label for="black">Black</label><br>
+
+                <input type="checkbox" url="r" displayTerm="red" name="colorButton" id="red">
+                <label for="red">Red</label><br>
+
+                <input type="checkbox" url="g" displayTerm="green" name="colorButton" id="green">
+                <label for="green">Green</label><br>
+
+                <br>
+
+                <input type="radio" url="" displayTerm="is exactly" name="exclusivityButton" id="exactly" checked=true>
+                <label for="exactly">Exactly these colors</label><br>
+
+                <input type="radio" url=">" displayTerm="has at least" name="exclusivityButton" id="atLeast">
+                <label for="atLeast">At least these colors</label><br>
+
+                <input type="radio" url="<" displayTerm="has at most" name="exclusivityButton" id="atMost">
+                <label for="atMost">At most these colors</label><br>
+            </div>
+
+            <div class="control">
+                <h2>
+                    Sort Order
+                </h2>
+
+                <input type="radio" url="name" displayTerm="alphabetical order" name="sortButton" id="alphabetical" checked=true>
+                <label for="alphabetical">Alphabetical</label><br>
+
+                <input type="radio" url="cmc" displayTerm="mana value" name="sortButton" id="manaValue">
+                <label for="manaValue">Mana Value</label><br>
+
+                <input type="radio" url="released" displayTerm="release date" name="sortButton" id="releaseDate">
+                <label for="releaseDate">Release Date</label><br>
+
+                <input type="radio" url="rarity" displayTerm="rarity" name="sortButton" id="rarity">
+                <label for="rarity">Rarity</label><br>
+
+                <br>
+
+                <input type="radio" url="asc" displayTerm="ascending" name="directionButton" id="ascending" checked=true>
+                <label for="ascending">Ascending</label><br>
+
+                <input type="radio" url="desc" displayTerm="descending" name="directionButton" id="descending">
+                <label for="descending">Descending</label><br>
+            </div>
+
+            <div class="control">
+                <h2>
+                    Name Includes...
+                </h2>
+
+                <input id="nameBar" type="text" size="20"/>
+            </div>
+
+            <button id="search">Search!</button>
+
+        </div>
+        <p id="status">
+
+        </p>
+
+        <h2>
+            Results
+        </h2>
+        <div id="displayList">
+            Search somehting already! Im waiting...
+        </div>
+        <div id="nextButtonZone">
+            
+        </div>
+    </main>
+</body>
+
+</html>
